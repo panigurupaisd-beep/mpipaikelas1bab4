@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Mengenal Rukun Islam – PAI Kelas 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E8F4FD;--ink:#1F2A44;--blue:#1E6FB8;--blue2:#14518A;--green:#2E8B57;--cta:#F5A524;--ctaink:#3A2600;--ok:#1B7F46;--okbg:#DDF5E6;--no:#B3261E;--nobg:#FDE4E1;--card:#fff;--purple:#5B4B9A;--r:20px}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#E8F4FD}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+html,body{margin:0;height:100%}
+body{font-family:'Nunito',system-ui,sans-serif;font-size:18px;line-height:1.6;color:var(--ink);background:var(--bg);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3,.d{font-family:'Fredoka','Trebuchet MS',sans-serif;margin:.2em 0;line-height:1.25}
+button{font:inherit;cursor:pointer;border:0;min-height:60px;min-width:60px;border-radius:16px;padding:10px 20px;transition:.25s ease;color:var(--ink)}
+button:active{transform:scale(.96)}button:disabled{opacity:.5;cursor:not-allowed}
+.btn{background:var(--cta);color:var(--ctaink);font-weight:800;box-shadow:0 5px 0 #B77700}
+.btn.alt{background:#fff;color:var(--blue2);box-shadow:0 5px 0 #9CB9D6;border:2px solid var(--blue)}
+#app{display:flex;flex-direction:column;height:100%}
+#top{display:flex;align-items:center;gap:8px;padding:8px 10px;background:var(--blue);color:#fff}
+#top button{background:#fff;color:var(--blue2);font-size:22px;padding:0 14px}
+#top .t{flex:1;font-family:Fredoka;font-size:20px;text-align:center}
+#pts{background:#FFF3C9;color:var(--ctaink);border-radius:30px;padding:6px 14px;font-weight:800;white-space:nowrap}
+#tabs{display:flex;gap:6px;overflow-x:auto;padding:6px 8px;background:#fff;border-bottom:2px solid #cfe3f5}
+#tabs button{flex:0 0 auto;background:#EAF3FB;font-size:15px;font-weight:700;display:flex;flex-direction:column;align-items:center;line-height:1.2;padding:6px 10px}
+#tabs button span{font-size:22px}#tabs button.on{background:var(--blue);color:#fff}
+#main{flex:1;overflow-y:auto;padding:16px;max-width:980px;width:100%;margin:0 auto}
+.card{background:var(--card);border-radius:var(--r);padding:18px;box-shadow:0 4px 14px #1e6fb822;margin-bottom:14px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.c{justify-content:center;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.menu button{background:#fff;border:3px solid var(--blue);font-weight:800;font-size:19px;display:flex;flex-direction:column;align-items:center;min-height:100px;box-shadow:0 5px 0 #9CB9D6}
+.menu button span{font-size:38px}
+.bubble{background:#FFF8DC;border:3px solid var(--cta);border-radius:22px;padding:14px;flex:1;min-width:220px;position:relative}
+.ar{font-family:'Amiri','Scheherazade New','Noto Naskh Arabic',serif;font-size:36px;line-height:2;direction:rtl;background:#FFE6A8;border-radius:14px;padding:6px 12px;text-align:center}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:3px solid #9CB9D6;margin:8px 0;font-weight:700;box-shadow:0 4px 0 #cfe0f0}
+.opt.ok{background:var(--okbg);border-color:var(--ok);color:var(--ok)}.opt.no{background:var(--nobg);border-color:var(--no);color:var(--no);animation:sh .4s}
+.opt.sel{background:#D9ECFF;border-color:var(--blue)}
+.fb{border-radius:14px;padding:10px 14px;margin:10px 0;font-weight:700}.fb.ok{background:var(--okbg);color:var(--ok);animation:bn .5s}.fb.no{background:var(--nobg);color:var(--no)}
+.bar{height:18px;background:#d5e6f6;border-radius:12px;overflow:hidden}.bar i{display:block;height:100%;background:var(--green);transition:width .4s ease}
+.slot{min-width:70px;min-height:64px;border:3px dashed #9CB9D6;border-radius:14px;padding:8px;font-weight:800;text-align:center;flex:1 1 140px}
+.slot.f{border-style:solid;border-color:var(--ok);background:var(--okbg)}
+table{border-collapse:collapse;width:100%}td{border:2px solid #fff;padding:8px;background:#FFE6A8;text-align:center}
+.sk{animation:sh .4s}.pop{animation:bn .5s}
+@keyframes sh{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+@keyframes bn{40%{transform:translateY(-8px)}70%{transform:translateY(2px)}}
+@keyframes fl{50%{transform:translateY(-8px)}}@keyframes tw{50%{opacity:.3}}@keyframes tr{from{transform:translateX(-120px)}to{transform:translateX(110vw)}}
+/* cover */
+#cover{position:fixed;inset:0;z-index:9;background:linear-gradient(#173B7A,#2E75C6 55%,#BFE0F8);overflow:auto;display:flex;flex-direction:column;align-items:center;padding:calc(14px + env(safe-area-inset-top,0px)) 14px 14px;color:#fff;text-align:center}
+#cover .st{position:absolute;width:4px;height:4px;background:#FFF6B0;border-radius:50%;animation:tw 2.5s infinite}
+#cover h1{font-size:clamp(32px,6vw,58px);text-shadow:0 3px 0 #0b2b5e;margin:.1em 0}
+#cover .sub{font-size:clamp(18px,2.6vw,24px);font-weight:800}
+.pill{display:inline-block;background:#ffffffee;color:var(--blue2);border-radius:30px;padding:4px 16px;font-weight:800;margin:3px}
+#cover .go{font-size:30px;padding:14px 56px;margin-top:10px;animation:fl 2s infinite}
+.mas{animation:fl 3s ease-in-out infinite}
+.hide{display:none!important}
+@media(max-width:600px){body{font-size:16px}#tabs button{font-size:13px}.ar{font-size:30px}}
+@media(min-width:1400px){body{font-size:22px}}
+</style></head><body>
+
+<div id="cover">
+<script>for(let i=0;i<24;i++)document.write('<i class="st" style="left:'+Math.random()*100+'%;top:'+Math.random()*35+'%;animation-delay:'+Math.random()*2+'s"></i>')</script>
+<div class="pill">📚 Pendidikan Agama Islam • Kelas 1 (Fase A)</div>
+<svg viewBox="0 0 520 250" style="width:min(520px,94%);margin-top:6px" aria-hidden="true">
+<circle cx="440" cy="40" r="22" fill="#FFE98A"/><circle cx="450" cy="34" r="20" fill="#2A5BA8"/>
+<rect x="150" y="110" width="220" height="100" rx="6" fill="#6A58B8"/><path d="M165 110Q260 -10 355 110Z" fill="#FFD83B" stroke="#C99A00" stroke-width="3"/>
+<rect x="238" y="20" width="4" height="22" fill="#C99A00"/><path d="M240 18l-5 12h10z" fill="#FFD83B"/>
+<path d="M230 210v-45a30 30 0 0160 0v45z" fill="#CFC5F5"/><rect x="120" y="70" width="28" height="140" fill="#7FB5E6"/><path d="M120 70q14-40 28 0z" fill="#FFD83B"/><rect x="372" y="70" width="28" height="140" fill="#7FB5E6"/><path d="M372 70q14-40 28 0z" fill="#FFD83B"/>
+<ellipse cx="90" cy="215" rx="130" ry="30" fill="#fff" opacity=".9"/><ellipse cx="440" cy="218" rx="120" ry="28" fill="#fff" opacity=".9"/>
+<rect x="0" y="212" width="520" height="38" fill="#6DBE5B"/>
+<g class="mas"><circle cx="260" cy="170" r="0"/></g></svg>
+<div class="d sub" style="margin-top:-6px">BAB 4</div>
+<h1>Mengenal Rukun Islam</h1>
+<div class="sub">A. Mengerti Rukun Islam • B–C. Dua Kalimat Syahadat • D. Aku Anak Muslim</div>
+<div id="cm" class="mas" style="margin:6px 0"></div>
+<button class="btn go" onclick="start()">▶ MULAI</button>
+<div style="margin-top:10px;font-weight:800">Dibuat oleh: M. Ripani, S.Pd • 2026</div>
+<div style="overflow:hidden;width:100%;height:34px;font-size:28px"><div style="animation:tr 9s linear infinite;white-space:nowrap">🚂🚃🚃🚃🚃🚃</div></div>
+</div>
+
+<div id="app" class="hide">
+<div id="top"><button onclick="back()" aria-label="Kembali">◀</button><button onclick="go('home')" aria-label="Beranda">🏠</button><div class="t" id="ttl">Beranda</div><span id="pts">⭐ 0</span><button onclick="nxt()" aria-label="Lanjut">▶</button></div>
+<div id="tabs"></div><div id="main"></div></div>
+
+<script>
+const $=s=>document.querySelector(s),sh=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+let S={pts:0,done:{},last:null,ref:null};try{S=Object.assign(S,JSON.parse(localStorage.getItem('pai1b4')||'{}'))}catch(e){}
+const save=()=>{try{localStorage.setItem('pai1b4',JSON.stringify(S))}catch(e){}};
+const PG=[['home','🏠','Beranda'],['materi','📖','Materi'],['aktivitas','🎯','Aktivitas'],['game','🎮','Game'],['latihan','📝','Latihan'],['kuis','❓','Kuis'],['hasil','🏆','Hasil'],['refleksi','💭','Refleksi'],['petunjuk','📋','Petunjuk'],['penutup','🎉','Penutup']];
+const RK=['Membaca syahadat','Mengerjakan salat','Membayar zakat','Menjalankan puasa','Melaksanakan haji bagi yang mampu'],RI=['☝️','🕌','💝','🌙','🕋'];
+let cur='home',hist=[];
+function mas(m='happy',w=110){const mo={happy:'<path d="M42 66q8 9 16 0" stroke="#7A3B1E" stroke-width="3" fill="none"/>',think:'<path d="M44 68h12" stroke="#7A3B1E" stroke-width="3"/>',wow:'<ellipse cx="50" cy="68" rx="5" ry="6" fill="#7A3B1E"/>',proud:'<path d="M38 63q12 16 24 0z" fill="#7A3B1E"/>',sad:'<path d="M43 70q7-7 14 0" stroke="#7A3B1E" stroke-width="3" fill="none"/>'}[m];
+return `<svg width="${w}" viewBox="0 0 100 130" role="img" aria-label="Ahmad, maskot"><rect x="22" y="88" width="56" height="42" rx="16" fill="#6CBF84"/><circle cx="50" cy="56" r="30" fill="#F6C99B"/><path d="M22 46q0-30 28-30t28 30z" fill="#fff" stroke="#9CB9D6" stroke-width="2"/><rect x="22" y="40" width="56" height="8" fill="#1E6FB8"/><circle cx="39" cy="58" r="4" fill="#222"/><circle cx="61" cy="58" r="4" fill="#222"/><circle cx="32" cy="66" r="5" fill="#F4A6A0" opacity=".7"/><circle cx="68" cy="66" r="5" fill="#F4A6A0" opacity=".7"/>${mo}${m=='wow'||m=='proud'?'<path d="M30 92l-12-12M70 92l12-12" stroke="#F6C99B" stroke-width="8" stroke-linecap="round"/>':''}</svg>`}
+const say=(m,t)=>`<div class="row" style="flex-wrap:nowrap"><div>${mas(m,84)}</div><div class="bubble">${t}</div></div>`;
+function start(){$('#cover').classList.add('hide');$('#app').classList.remove('hide');go('home')}
+function go(p,noh){if(!noh&&p!=cur)hist.push(cur);cur=p;const x=PG.find(a=>a[0]==p);$('#ttl').textContent=x[1]+' '+x[2];tabs();R[p]();$('#main').scrollTop=0;pt(0)}
+function back(){go(hist.pop()||'home',1)}
+function nxt(){const i=PG.findIndex(a=>a[0]==cur);go(PG[Math.min(i+1,PG.length-1)][0])}
+function tabs(){$('#tabs').innerHTML=PG.slice(0,9).map(a=>`<button class="${a[0]==cur?'on':''}" onclick="go('${a[0]}')"><span>${a[1]}</span>${a[2]}</button>`).join('')}
+function pt(n){S.pts+=n;$('#pts').textContent='⭐ '+S.pts;save()}
+function fb(el,ok,t){el.className='fb '+(ok?'ok':'no');el.innerHTML=(ok?'✓ Benar! ':'✗ Belum tepat. ')+t}
+const M=t=>$('#main').innerHTML=t;
+const R={};
+R.home=()=>{const d=S.done;M(`<div class="card">${say('think','Halo, aku <b>Ahmad</b>! 👋 Lihat gambar masjid itu. Apa ya yang dilakukan anak-anak di sana? Tahukah kamu ada <b>5 rukun Islam</b>? Yuk belajar bersama!')}
+<div class="row c" id="pm"><button class="btn alt" onclick="pm('Salat berjemaah 🕌')">Salat berjemaah</button><button class="btn alt" onclick="pm('Bermain 🛝')">Bermain</button><button class="btn alt" onclick="pm('Tidur 😴')">Tidur</button></div><div id="pf"></div></div>
+<h2>Pilih Menu</h2><div class="grid menu">${PG.slice(1,9).map(a=>`<button onclick="go('${a[0]}')"><span>${a[1]}</span>${a[2]}${d[a[0]]?' ✓':''}</button>`).join('')}</div>
+<div class="card" style="margin-top:14px"><b>Tujuan:</b> hafal 5 rukun Islam, melafalkan &amp; mengartikan dua kalimat syahadat, bernyanyi, dan menyayangi ayah bunda. 💛<div class="bar" style="margin-top:8px"><i style="width:${Object.keys(d).length/7*100}%"></i></div></div>`)};
+function pm(a){const ok=a.startsWith('Salat');$('#pf').innerHTML=`<div class="fb ${ok?'ok':'no'}">${ok?'✓ Betul! Mereka sedang salat berjemaah. Salat termasuk rukun Islam. Ayo kita pelajari!':'✗ Coba lihat lagi: mereka berkumpul di masjid memakai sarung &amp; peci. Pilih lainnya ya!'}</div>`;if(ok)pt(5)}
+let sl=0;const SL=[
+()=>`<h2>Rukun Islam ada lima</h2><p>Orang Islam harus melaksanakannya. Ibarat <b>kereta</b> 🚂 yang singgah di 5 stasiun!</p><svg viewBox="0 0 500 120" style="width:100%"><path d="M20 70H480" stroke="#7a5a3a" stroke-width="8" stroke-dasharray="14 6"/>${RI.map((e,i)=>`<circle cx="${50+i*100}" cy="70" r="26" fill="#FFE6A8" stroke="#F5A524" stroke-width="4"/><text x="${50+i*100}" y="78" text-anchor="middle" font-size="22">${e}</text><text x="${50+i*100}" y="30" text-anchor="middle" font-size="16" font-weight="800" fill="#1F2A44">Stasiun ${i+1}</text>`).join('')}</svg><ol>${RK.map(r=>`<li><b>${r}</b></li>`).join('')}</ol>`,
+()=>`<h2>Syahadat artinya kesaksian</h2><p>Rukun Islam yang <b>pertama</b> adalah syahadat. Orang yang masuk Islam membaca syahadat. Syahadat ada dua: <b>syahadat tauhid</b> dan <b>syahadat rasul</b>.</p><div class="row c"><div class="card c" style="flex:1">☝️<br><b>Tauhid</b><br>tentang Allah</div><div class="card c" style="flex:1">🌟<br><b>Rasul</b><br>tentang Nabi Muhammad saw.</div></div>`,
+()=>`<h2>Syahadat Tauhid</h2><div class="ar">اَشْهَدُ اَنْ لَآ اِلٰهَ اِلَّا الله</div><p class="c"><i>“Asyhadu allā ilāha illallāh”</i></p><p>Artinya: tidak ada Tuhan selain Allah. Hanya Allah Swt. yang wajib disembah.</p>`,
+()=>`<h2>Syahadat Rasul</h2><div class="ar">وَاَشْهَدُ اَنَّ مُحَمَّدًا رَسُوْلُ الله</div><p class="c"><i>“Wa asyhadu anna muhammadar rasūlullāh”</i></p><p>Artinya: Nabi Muhammad saw. utusan Allah. Beliau <b>uswatun hasanah</b>, yaitu suri teladan yang baik. Kita meneladan perilaku Nabi, misalnya menolong orang lain. 🤝</p>`,
+()=>`<h2>Arti Kata Syahadat</h2><table>${[['Aku bersaksi','Asyhadu'],['bahwa tidak ada','Allā'],['Tuhan','Ilāha'],['Selain','Illā'],['Allah','Allāh'],['Dan aku bersaksi','Waasyhadu'],['Sesungguhnya','Anna'],['Muhammad','Muhammadan'],['Utusan Allah','Rasūlullāh']].map(r=>`<tr><td>${r[0]}</td><td><i>${r[1]}</i></td></tr>`).join('')}</table>`,
+()=>`<h2>Aku Anak Muslim</h2><p>Aku beragama Islam. Aku salat setiap hari. Aku selalu berbuat baik kepada sesama.</p><div class="grid">${[['🕌','Salat lima waktu'],['🤝','Berbagi kepada teman'],['🧹','Membantu ibu di rumah'],['🛏️','Merapikan tempat tidur'],['💛','Menyayangi ayah &amp; bunda']].map(a=>`<div class="card c"><div style="font-size:40px">${a[0]}</div><b>${a[1]}</b></div>`).join('')}</div>`,
+()=>`<h2>🎵 Dua Kalimat Syahadat</h2><p class="c"><i>(Nada: Naik Becak)</i></p><div class="card c" style="background:#FFF8DC"><b>Lā ilāha illallāh<br>Muhammadar rasūlullāh<br>Lā ilāha illallāh<br>Muhammadar rasūlullāh<br>Tiada Tuhan selain Allah<br>Muhammad utusan Allah<br>Allah .. Allah ..<br>Lā ilāha illallāh</b></div>`,
+()=>`<h2>Pengayaan</h2><p>🗝️ <b>Zakat</b> rukun ketiga (zakat mal &amp; zakat fitrah).<br>🌙 <b>Puasa</b> rukun keempat, wajib di bulan Ramadan.<br>🕋 <b>Haji</b> rukun kelima, dilakukan di Kota Makkah.</p><p><b>Salat</b> adalah rukun Islam yang <b>kedua</b>.</p>`];
+R.materi=()=>{const last=sl==SL.length-1;M(`<div class="bar"><i style="width:${(sl+1)/SL.length*100}%"></i></div><p class="c">Bagian ${sl+1} dari ${SL.length}</p><div class="card">${SL[sl]()}</div>${say(['happy','think','wow','proud','happy','proud','happy','wow'][sl],['Ayo hafalkan!','Ingat: syahadat itu kesaksian.','Ucapkan pelan-pelan bersamaku!','Nabi Muhammad teladan kita.','Hebat, sudah tahu artinya!','Aku bangga jadi anak Muslim!','Ayo bernyanyi bersama!','Kamu makin pintar!'][sl])}<div class="row c" style="margin-top:12px"><button class="btn alt" ${sl?'':'disabled'} onclick="sl--;R.materi()">◀ Sebelumnya</button><button class="btn" onclick="${last?"S.done.materi=1;pt(10);go('aktivitas')":'sl++;R.materi()'}">${last?'Selesai ✓ Aktivitas':'Lanjut ▶'}</button></div>`)};
+let at='susun',ord=[],mt={a:null,ok:0};
+R.aktivitas=()=>{M(`<div class="row c"><button class="btn ${at=='susun'?'':'alt'}" onclick="at='susun';ord=[];R.aktivitas()">🚂 Susun Rukun</button><button class="btn ${at=='cocok'?'':'alt'}" onclick="at='cocok';mt={a:null,ok:0};R.aktivitas()">🔗 Cocokkan Arti</button></div><div id="ac"></div>`);at=='susun'?susun():cocok()};
+function susun(){$('#ac').innerHTML=`<div class="card"><h3>Susun urutan lima rukun Islam</h3><p>Ketuk kartu sesuai urutan, mulai Stasiun 1.</p><div class="row">${RK.map((r,i)=>`<div class="slot ${i<ord.length?'f':''}">${i+1}. ${i<ord.length?RI[ord[i]]+' '+RK[ord[i]]:'?'}</div>`).join('')}</div><div class="row" style="margin-top:12px">${(window.sc=window.sc&&ord.length?sc:sh([0,1,2,3,4])).map(i=>`<button class="opt" style="width:auto" ${ord.includes(i)?'disabled':''} onclick="pick(${i})">${RI[i]} ${RK[i]}</button>`).join('')}</div><div id="f"></div></div>`}
+function pick(i){if(i==ord.length){ord.push(i);if(ord.length==5){pt(15);S.done.aktivitas=1;susun();$('#f').className='fb ok';$('#f').innerHTML='✓ Hebat! Kereta sampai di semua stasiun! 🚂⭐ +15';window.sc=null;ord=[];return}susun();$('#f').className='fb ok';$('#f').textContent='✓ Tepat!'}else{fb($('#f'),0,`Itu bukan rukun ke-${ord.length+1}. Petunjuk: rukun pertama adalah syahadat, kedua salat. Coba lagi!`);$('#f').classList.add('sk')}}
+const PR=[['Aku bersaksi','Asyhadu'],['bahwa tidak ada','Allā'],['Tuhan','Ilāha'],['Selain','Illā'],['Utusan Allah','Rasūlullāh']];
+function cocok(){if(!mt.L){mt.L=sh([0,1,2,3,4]);mt.Rr=sh([0,1,2,3,4]);mt.d=[]}$('#ac').innerHTML=`<div class="card"><h3>Cocokkan arti dengan bacaannya</h3><p>Ketuk satu arti, lalu ketuk bacaan yang cocok.</p><div class="row" style="align-items:flex-start"><div style="flex:1">${mt.L.map(i=>`<button class="opt ${mt.d.includes(i)?'ok':mt.a===i?'sel':''}" ${mt.d.includes(i)?'disabled':''} onclick="mt.a=${i};cocok()">${mt.d.includes(i)?'✓ ':''}${PR[i][0]}</button>`).join('')}</div><div style="flex:1">${mt.Rr.map(i=>`<button class="opt ${mt.d.includes(i)?'ok':''}" ${mt.d.includes(i)?'disabled':''} onclick="mc(${i},this)"><i>${PR[i][1]}</i></button>`).join('')}</div></div><div id="f"></div></div>`}
+function mc(i,b){if(mt.a===null){fb($('#f'),0,'Pilih artinya dulu di sebelah kiri.');return}if(mt.a==i){mt.d.push(i);mt.a=null;cocok();if(mt.d.length==5){pt(15);S.done.aktivitas=1;$('#f').className='fb ok';$('#f').textContent='✓ Semua cocok! Luar biasa! ⭐ +15';mt={a:null,ok:0}}else{$('#f').className='fb ok';$('#f').textContent='✓ Cocok!'}}else{b.classList.add('no');fb($('#f'),0,'Pasangannya belum cocok. Ingat: Ilāha = Tuhan. Coba lagi!');mt.a=null;setTimeout(cocok,900)}}
+let G={r:0,sc:0,o:[],t:0};
+R.game=()=>{G={r:0,sc:0,o:sh([0,1,2,3,4]),t:0,w:0};gr()};
+function gr(){if(G.r>=5){S.done.game=1;pt(G.sc);M(`<div class="card c">${mas('proud',120)}<h2>Kereta tiba! 🚂</h2><p>Poin game: <b>${G.sc}</b></p><div class="row c"><button class="btn" onclick="R.game()">Main lagi</button><button class="btn alt" onclick="go('latihan')">Latihan ▶</button></div></div>`);return}
+const n=G.o[G.r];const ch=sh([n,...sh([0,1,2,3,4].filter(x=>x!=n)).slice(0,2)]);G.w=0;
+M(`<div class="bar"><i style="width:${G.r/5*100}%"></i></div><div class="card c"><h2>🚂 Kereta Rukun Islam</h2><p>Kereta berhenti di <b>Stasiun ke-${n+1}</b>. Rukun Islam apa ini?</p>${ch.map(i=>`<button class="opt" onclick="ga(${i},${n},this)">${RI[i]} ${RK[i]}</button>`).join('')}<div id="f"></div></div>`)}
+function ga(i,n,b){if(i==n){b.classList.add('ok');G.sc+=G.w?5:10;fb($('#f'),1,RK[n]+' adalah rukun ke-'+(n+1)+'.');G.r++;setTimeout(gr,1100)}else{G.w=1;b.classList.add('no');b.disabled=true;fb($('#f'),0,'Petunjuk: ingat urutan syahadat → salat → zakat → puasa → haji. Coba lagi!')}}
+const LB=[['Rukun Islam ada lima.',1,'Ada 5 rukun Islam.'],['Salat adalah rukun Islam yang ketiga.',0,'Salat rukun yang kedua. Yang ketiga zakat.'],['Syahadat artinya kesaksian.',1,'Syahadat = kesaksian.'],['Syahadat rasul menyatakan Nabi Muhammad saw. utusan Allah.',1,'Benar, itu syahadat rasul.'],['Rukun Islam yang pertama adalah puasa.',0,'Yang pertama adalah syahadat.']];
+let L={i:0,s:0};
+R.latihan=()=>{L={i:0,s:0};lq()};
+function lq(){if(L.i>=LB.length){S.done.latihan=1;pt(L.s*2);M(`<div class="card c">${mas('happy',110)}<h2>Latihan selesai!</h2><p>Benar pada percobaan pertama: ${L.s}/${LB.length}</p><div class="row c"><button class="btn" onclick="R.latihan()">Ulangi</button><button class="btn alt" onclick="go('kuis')">Kuis ▶</button></div></div>`);return}
+const q=LB[L.i];L.w=0;M(`<div class="bar"><i style="width:${L.i/LB.length*100}%"></i></div><div class="card"><h3>Benar atau Salah?</h3><p style="font-size:1.2em"><b>${q[0]}</b></p><div class="row"><button class="opt" style="flex:1" onclick="la(1,this)">✓ Benar</button><button class="opt" style="flex:1" onclick="la(0,this)">✗ Salah</button></div><div id="f"></div></div>`)}
+function la(v,b){const q=LB[L.i];if(v==q[1]){b.classList.add('ok');if(!L.w)L.s++;fb($('#f'),1,q[2]);L.i++;setTimeout(lq,1500)}else{L.w=1;b.classList.add('no');fb($('#f'),0,'Baca lagi pelan-pelan. Kamu pasti bisa! Coba pilihan lainnya.')}}
+const QP=[['Berapa jumlah rukun Islam?',['5','3','7'],'Rukun Islam ada lima.'],['Apa arti syahadat?',['Kesaksian','Hadiah','Nyanyian'],'Syahadat artinya kesaksian.'],['Rukun Islam yang pertama adalah ...',['Syahadat','Zakat','Haji'],'Yang pertama adalah syahadat.'],['Rukun Islam yang kedua adalah ...',['Salat','Puasa','Haji'],'Kedua adalah salat.'],['Zakat adalah rukun Islam yang ke ...',['3','5','1'],'Zakat rukun ketiga.'],['Puasa wajib pada bulan ...',['Ramadan','Muharam','Rajab'],'Puasa wajib di bulan Ramadan.'],['Haji dilakukan di kota ...',['Makkah','Jakarta','Cairo'],'Haji dilakukan di Makkah.'],['Asyhadu artinya ...',['Aku bersaksi','Aku makan','Aku tidur'],'Asyhadu = aku bersaksi.'],['Syahadat tauhid menyatakan tidak ada Tuhan selain ...',['Allah','Bulan','Matahari'],'Hanya Allah yang wajib disembah.'],['Nabi panutan kita adalah Nabi ...',['Muhammad saw.','Si Kancil','Pak Guru'],'Nabi Muhammad saw. suri teladan yang baik.'],['Berapa kali kita salat sehari semalam?',['5 kali','1 kali','10 kali'],'Kita salat lima waktu.'],['Orang yang beragama Islam disebut ...',['Muslim','Pelaut','Petani'],'Pemeluk Islam disebut muslim.'],['Jika ada teman kesusahan, kita ...',['Menolong','Menertawakan','Pergi'],'Anak saleh saling membantu.'],['Syahadat ada dua, yaitu syahadat tauhid dan syahadat ...',['Rasul','Haji','Zakat'],'Syahadat tauhid dan syahadat rasul.']];
+let Q={};
+R.kuis=()=>{Q={l:sh(QP).slice(0,10),i:0,b:0,t:Date.now()};kq()};
+function kq(){if(Q.i>=10){const s=Q.b*10;S.last={s,b:Q.b,w:10-Q.b,t:Math.round((Date.now()-Q.t)/1000)};S.done.kuis=1;pt(s/2);go('hasil');return}
+const q=Q.l[Q.i];Q.a=0;Q.o=sh(q[1]);M(`<div class="bar"><i style="width:${Q.i/10*100}%"></i></div><p class="c">Soal ${Q.i+1} dari 10</p><div class="card"><h3>${q[0]}</h3>${Q.o.map((o,k)=>`<button class="opt" onclick="ka(${k},this)">${'ABC'[k]}. ${o}</button>`).join('')}<div id="f"></div></div>`)}
+function ka(k,b){if(Q.a)return;Q.a=1;const q=Q.l[Q.i],ok=Q.o[k]==q[1][0];if(ok){Q.b++;b.classList.add('ok')}else b.classList.add('no');document.querySelectorAll('.opt').forEach(x=>{x.disabled=true;if(x.textContent.slice(3)==q[1][0])x.classList.add('ok')});fb($('#f'),ok,q[2]);Q.i++;$('#f').insertAdjacentHTML('afterend','<button class="btn" onclick="kq()">Lanjut ▶</button>')}
+R.hasil=()=>{const l=S.last;if(!l){M(`<div class="card c">${mas('think',110)}<h2>Belum ada hasil</h2><p>Kerjakan kuis dulu ya!</p><button class="btn" onclick="go('kuis')">Mulai Kuis</button></div>`);return}
+const bd=l.s>=80?['🏆','Luar Biasa!']:l.s>=60?['🥈','Hebat!']:['🌱','Tetap Semangat!'];
+M(`<div class="card c">${mas(l.s>=60?'proud':'happy',120)}<div style="font-size:64px">${bd[0]}</div><h2>${bd[1]}</h2><h1 style="font-size:56px">${l.s}</h1><p>✓ Benar: <b>${l.b}</b> &nbsp; ✗ Salah: <b>${l.w}</b> &nbsp; ⏱ ${l.t} detik</p><div class="bubble" style="text-align:left">${l.s<60?'Yuk ulangi bagian <b>Materi</b> tentang 5 rukun Islam dan arti syahadat, lalu coba kuis lagi.':l.s<80?'Sedikit lagi! Ulangi bagian arti kata syahadat agar makin lancar.':'Kamu sudah paham rukun Islam dan syahadat!'}</div></div>
+<div class="card"><b>Ringkasan:</b> Rukun Islam ada 5 (syahadat, salat, zakat, puasa, haji). Syahadat = kesaksian: tauhid &amp; rasul.</div><div class="row c"><button class="btn alt" onclick="go('materi')">📖 Ulangi Materi</button><button class="btn" onclick="go('refleksi')">💭 Refleksi ▶</button></div>`)};
+R.refleksi=()=>{const r=S.ref||{};M(`<div class="card">${say('happy','Ceritakan perasaanmu belajar hari ini ya!')}<h3>Apa yang paling kamu sukai?</h3><div class="row">${['🎮 Game','🎵 Lagu','📖 Materi','🚂 Susun'].map(x=>`<button class="opt" style="width:auto" onclick="rf('like','${x}')">${x}</button>`).join('')}</div><h3>Bagian mana yang masih sulit?</h3><div class="row">${['Rukun Islam','Arti syahadat','Tidak ada'].map(x=>`<button class="opt" style="width:auto" onclick="rf('hard','${x}')">${x}</button>`).join('')}</div><h3>Bintang untukmu</h3><div class="row">${[1,2,3,4,5].map(n=>`<button class="btn alt" style="font-size:26px" onclick="rf('star',${n})">${(r.star||0)>=n?'⭐':'☆'}</button>`).join('')}</div><p><b>Aku ingin belajar lagi tentang:</b></p><input id="rt" value="${r.t||''}" maxlength="60" style="width:100%;min-height:60px;font:inherit;padding:8px 12px;border-radius:14px;border:3px solid #9CB9D6"><div id="rm" class="fb ok ${r.star?'':'hide'}">${rmsg(r)}</div><button class="btn" onclick="S.ref=Object.assign(S.ref||{},{t:$('#rt').value});S.done.refleksi=1;save();go('penutup')">Selesai ▶</button></div>`)};
+const rmsg=r=>r.hard&&r.hard!='Tidak ada'?`Tidak apa-apa, bagian "${r.hard}" bisa dipelajari lagi pelan-pelan. Kamu pasti bisa! 💪`:'Wah, hebat! Terus semangat belajar ya! 🌟';
+function rf(k,v){S.ref=S.ref||{};S.ref[k]=v;save();const t=$('#rt')?$('#rt').value:'';R.refleksi();$('#rt').value=t;S.ref.t=t}
+R.petunjuk=()=>M(`<div class="card">${say('happy','Ini cara memakai media ini:')}<ol><li>Tekan <b>MULAI</b>, pilih menu.</li><li>Tombol ◀ ▶ untuk mundur &amp; lanjut, 🏠 ke beranda.</li><li>Baca <b>Materi</b>, lalu coba <b>Aktivitas</b> dan <b>Game</b>.</li><li>Jika jawabanmu salah, baca petunjuk dan coba lagi.</li><li>Kumpulkan ⭐ sebanyak-banyaknya!</li><li>Kerjakan <b>Kuis</b> 10 soal untuk melihat hasilmu.</li></ol><p>Kemajuanmu tersimpan otomatis.</p></div>`);
+R.penutup=()=>M(`<div class="card c">${mas('proud',140)}<h1>Barakallah, hebat sekali! 🎉</h1><p>Kamu sudah mengenal rukun Islam dan dua kalimat syahadat. Jangan lupa <b>menyayangi ayah dan bunda</b>, dan salat setiap hari. 💛</p><p>⭐ Total bintang: <b>${S.pts}</b></p><div class="row c"><button class="btn" onclick="S={pts:0,done:{},last:null,ref:null};save();pt(0);go('home')">🔁 Ulangi Media</button><button class="btn alt" onclick="go('home')">Kembali ke Menu</button></div><p><small>Dibuat oleh M. Ripani, S.Pd • 2026<br>Sumber materi: Buku PAI &amp; BP Kelas 1, Kemendikbudristek 2021</small></p></div>`);
+document.getElementById('cm').innerHTML=mas('happy',130);
+</script></body></html>
